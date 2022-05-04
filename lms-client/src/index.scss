@@ -1,0 +1,106 @@
+@use "./styles/" as *;
+
+@import-normalize;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+a,
+.link {
+    text-decoration: none !important;
+    color: rgb(199, 194, 187) !important;
+    font-family: inherit;
+    padding: 0.5rem 1rem;
+    @include lg {
+        font-size: 1.2rem;
+        padding: 0.5rem 1.5rem;
+    }
+}
+
+a.active,
+.link.active {
+    color: aliceblue !important;
+}
+
+a:is(:hover, :focus),
+.link:is(:hover, :focus) {
+    color: #eedada !important;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: rgb(12, 6, 30);
+    color: rgb(199, 194, 187) !important;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+        monospace;
+}
+
+.card.selected {
+    background-color: beige;
+}
+
+.brand {
+    font-weight: 600;
+    @include px(0);
+    span {
+        font-size: 1.5rem;
+    }
+    @include md {
+        span {
+            font-size: 1.8rem;
+        }
+    }
+}
+
+h1 {
+    font-size: 26px;
+    text-align: center;
+    line-height: 36px;
+    @include md {
+        font-size: 40px;
+        line-height: 48px;
+        margin-bottom: 1rem;
+    }
+    @include lg {
+        font-size: 56px;
+        line-height: 64px;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Poppins", sans-serif;
+    color: rgb(232, 230, 227) !important;
+}
+
+h2 {
+    font-size: 20px;
+    @include md {
+        font-size: 36px;
+    }
+}
+
+h3 {
+    font-size: 18px;
+    @include md {
+        font-size: 30px;
+    }
+}
+
+p {
+    color: rgb(199, 194, 187) !important;
+    font-size: 14px;
+    @include md {
+        font-size: 16px;
+    }
+    @include lg {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'icon';
+  src:  url('fonts/icon.eot?bbq2x');
+  src:  url('fonts/icon.eot?bbq2x#iefix') format('embedded-opentype'),
+    url('fonts/icon.ttf?bbq2x') format('truetype'),
+    url('fonts/icon.woff?bbq2x') format('woff'),
+    url('fonts/icon.svg?bbq2x#icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  
+  /* Enable Ligatures ================ */
+  letter-spacing: 0;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  font-feature-settings: "liga";
+  -webkit-font-variant-ligatures: discretionary-ligatures;
+  font-variant-ligatures: discretionary-ligatures;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-star:before {
+  content: "\e900";
+  color: #5b5b5b;
+}
+.icon-star-filled:before {
+  content: "\e901";
+  color: #5b5b5b;
+}
+.icon-star-half-empty:before {
+  content: "\e902";
+  color: #5b5b5b;
+}

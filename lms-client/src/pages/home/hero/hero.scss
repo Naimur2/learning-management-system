@@ -1,0 +1,58 @@
+@use "../../../styles/" as *;
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    @include py(64);
+    @include md {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.hero-texts {
+    width: 100%;
+    @include py(36);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include md {
+        width: 48%;
+        padding-right: 1rem;
+        align-items: flex-start;
+    }
+}
+
+.hero-image {
+    width: 100%;
+    @include py(36);
+    img {
+        min-width: 20rem;
+        width: 100%;
+        height: 100%;
+    }
+    @include md {
+        width: 48%;
+        padding-left: 1rem;
+    }
+}
+
+.hero-title {
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    color: rgb(232, 230, 227) !important;
+    text-align: center;
+    @include md {
+        text-align: left;
+        max-width: 16ch;
+    }
+}
+
+.hero-description {
+    text-align: center;
+    @include md {
+        text-align: left;
+        max-width: 40ch;
+    }
+}

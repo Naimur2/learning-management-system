@@ -1,0 +1,158 @@
+@use "../../styles/" as *;
+
+.course-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 6rem;
+    @include md {
+        flex-direction: row;
+    }
+}
+.course-info-description {
+    @include lg {
+        width: 60%;
+    }
+}
+
+.course-info-card-container {
+    width: 100%;
+    @include md {
+        width: 50%;
+        margin-left: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.course-info-title {
+    font-size: 34px;
+    text-align: center;
+    @include md {
+        font-size: 40px;
+        text-align: left;
+    }
+    @include lg {
+        font-size: 48px;
+    }
+}
+
+.course-info-details {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 2rem;
+
+    @include md {
+        font-size: 20px;
+        text-align: left;
+    }
+
+    @include lg {
+        font-size: 26px;
+    }
+}
+
+.course-info-card {
+    background: rgb(56, 43, 75);
+    padding: 16px;
+    border-radius: 8px;
+
+    @include md {
+        width: 400px;
+    }
+}
+
+.course-info-card-image {
+    width: 100%;
+    overflow: hidden;
+    height: 300px;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+.course-info-price {
+    display: flex;
+    @include py(16);
+    h4 {
+        margin-right: 10px;
+        &:last-child {
+            margin-right: 0;
+            text-decoration: line-through;
+            opacity: 0.8;
+        }
+    }
+}
+
+.add-like {
+    display: flex;
+    margin-top: 1rem;
+    justify-content: space-between;
+    .btn-primary {
+        @include py(16);
+        @include px(32);
+        width: 85%;
+        background: rgb(223, 22, 230);
+        border: none;
+        margin-right: 10px;
+        &:hover {
+            background: rgb(185, 40, 190);
+        }
+    }
+    .love {
+        @include py(16);
+        width: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgb(159, 207, 113);
+        border-radius: 8px;
+        cursor: pointer;
+        &:hover {
+            background: rgb(185, 226, 0);
+        }
+        svg {
+            width: 24px;
+            height: 24px;
+            fill: rgb(85, 58, 58);
+        }
+    }
+}
+
+.btn-success {
+    width: 100%;
+    @include py(16);
+}
+
+.course-info-provides {
+    margin-top: 4rem;
+}
+
+.course-info-list {
+    margin-top: 1rem;
+    li {
+        margin-bottom: 1rem;
+        font-size: 18px;
+        @include md {
+            font-size: 20px;
+        }
+    }
+}
+.course-ratings {
+    display: flex;
+    align-items: center;
+    h4 {
+        margin-bottom: 0;
+        font-size: 20px;
+        margin-right: 10px;
+    }
+}
+.ratings-stars {
+    display: flex;
+    align-items: center;
+    svg {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+}

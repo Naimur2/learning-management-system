@@ -1,0 +1,55 @@
+@use "../../styles/" as *;
+
+.course-wishlist {
+    display: flex;
+    background: rgb(63, 7, 80);
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.course-image {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    @include md {
+        width: 200px;
+        height: 200px;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.delete-course {
+    padding: 2rem;
+}
+
+.course-description {
+    @include px(20);
+    h2 {
+        font-size: 1rem;
+        color: #fff;
+        @include md {
+            font-size: 1.1rem;
+        }
+    }
+    p {
+        text-align: center;
+        font-size: 0.8rem;
+        color: #fff;
+        @include md {
+            font-size: 0.9rem;
+        }
+    }
+}
