@@ -147,7 +147,7 @@ export default function Register() {
             </Form>
             <Stack className="mt-4">
                 <p>
-                    Already have an account? <Link to="/">Login</Link>{" "}
+                    Already have an account? <Link to="/login">Login</Link>{" "}
                 </p>
             </Stack>
         </Container>
