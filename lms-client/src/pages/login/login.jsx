@@ -48,7 +48,7 @@ export default function Login() {
                     console.log("admin");
                 } else if (data.data.role === "user") {
                     mainCtx.setUser(data.data);
-                    navigate("/");
+                    navigate("/login");
                     console.log("user");
                 }
             }
